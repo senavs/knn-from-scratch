@@ -25,6 +25,8 @@ class Point:
                    Point(-7, -4, 3)
                         [-7, -4, 3]
                         (-7, -4, 3)
+        :return: euclidean distance
+            :type: float
         """
 
         if not isinstance(other, Point):
