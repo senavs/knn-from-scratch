@@ -7,12 +7,30 @@ class Point:
         """Point constructor
 
         :param axis: iterable with point coordinates
-            :type list, np.array and tuple:
+            :type: list, tuple and np.array
             :example:
                         x    y    z     w
                 axis = [1, 0.3, 6.4, -0.2]
         """
+
         self.axis = np.array(axis)
+
+    def distance(self, other):
+        """Euclidean distance between 2 points with n dimensions
+
+        :param other: coordinates with same dimension of self
+            :type: Point, list, tuple, np.array
+            :example:
+                np.array([-7, -4, 3])
+                   Point(-7, -4, 3)
+                        [-7, -4, 3]
+                        (-7, -4, 3)
+        """
+
+        if not isinstance(other, Point):
+            other = Point(other)
+        # Euclidean distance
+        return sum((self - other) ** 2) ** 0.5
 
     def __add__(self, other):
         if isinstance(other, Point):
