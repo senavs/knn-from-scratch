@@ -57,6 +57,6 @@ class KNearestNeighbors:
             # k points with less distances
             distances = sorted(distances, key=itemgetter(0))[:self.k]
             # label of k points with less distances
-            predicts.append(max(distances, key=itemgetter(1))[1])
+            predicts.append(list(max(distances, key=itemgetter(1))[1]))
 
         return predicts
