@@ -28,4 +28,4 @@ predict = knn.predict(x_predict)
 ```
 
 ## Apply KNearestNeighbors from scratch in dataset
-To show the package working, I create a jupyter notebook with [iris dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html). Take a look into [here](https://github.com/senavs/knn-from-scratch/blob/master/notebook/knn-iris_dataset.ipynb).
+To show the package working, I created a jupyter notebook with [iris dataset](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html). Take a look into [here](https://github.com/senavs/knn-from-scratch/blob/master/notebook/knn-iris_dataset.ipynb).
