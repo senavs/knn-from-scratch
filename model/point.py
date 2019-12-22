@@ -34,6 +34,22 @@ class Point:
         # Euclidean distance
         return sum((self - other) ** 2) ** 0.5
 
+    def to_numpy(self):
+        """Point class to np.array
+
+        :return: self.axis
+            :type: np.array
+        """
+        return self.axis
+
+    def to_list(self):
+        """Point class to list
+
+        :return: self.axis.tolist()
+            :type: list
+        """
+        return self.axis.tolist()
+
     def __add__(self, other):
         if isinstance(other, Point):
             return Point(self.axis + other.axis)
